@@ -1,0 +1,44 @@
+,Name,places,length,start,end,France,Germany,England,Spain,Denmark,Others,Total
+0,Matilda of Flanders,France,17,1066,1083,1,0,0,0,0,0,1
+1,Matilda of Scotland,Scotland,18,1100,1118,1,0,0,0,0,1,2
+2,Adeliza of Louvain,Belgium,14,1121,1135,1,0,0,0,0,2,3
+3,Geoffrey V of Anjou,France,7,1141,1148,2,0,0,0,0,2,4
+4,Matilda of Boulogne,France,17,1135,1152,3,0,0,0,0,2,5
+5,Eleanor of Aquitaine,France,35,1154,1189,4,0,0,0,0,2,6
+6,Margaret of France,France,13,1170,1183,5,0,0,0,0,2,7
+7,Berengaria of Navarre,Spain,8,1191,1199,5,0,0,1,0,2,8
+8,Isabella of Angoulême,France,16,1200,1216,6,0,0,1,0,2,9
+9,Eleanor of Provence,France,36,1236,1272,7,0,0,1,0,2,10
+10,Eleanor of Castile,Spain,18,1272,1290,7,0,0,2,0,2,11
+11,Margaret of France,France,8,1299,1307,8,0,0,2,0,2,12
+12,Isabella of France,France,24,1303,1327,9,0,0,2,0,2,13
+13,Philippa of Hainault,France,41,1328,1369,10,0,0,2,0,2,14
+14,Anne of Bohemia,Czech Republic,12,1382,1394,10,0,0,2,0,3,15
+15,Isabella of Valois,France,3,1396,1399,11,0,0,2,0,3,16
+16,Joan of Navarre,Spain,10,1403,1413,11,0,0,3,0,3,17
+17,Catherine of Valois,France,2,1420,1422,12,0,0,3,0,3,18
+18,Margaret of Anjou,France,27,1444,1471,13,0,0,3,0,3,19
+19,Elizabeth Woodville,England,19,1464,1483,13,0,1,3,0,3,20
+20,Anne Neville,England,2,1483,1485,13,0,2,3,0,3,21
+21,Elizabeth of York,England,20,1483,1503,13,0,3,3,0,3,22
+22,Catherine of Aragon,Spain,24,1509,1533,13,0,3,4,0,3,23
+23,Anne Boleyn,England,4,1532,1536,13,0,4,4,0,3,24
+24,Jane Seymour,England,1,1536,1537,13,0,5,4,0,3,25
+25,Anne of Cleves,Germany,1,1539,1540,13,1,5,4,0,3,26
+26,Catherine Howard,England,2,1540,1542,13,1,6,4,0,3,27
+27,Catherine Parr,England,4,1543,1547,13,1,7,4,0,3,28
+28,Anne of Denmark,Denmark,16,1603,1619,13,1,7,4,1,3,29
+29,Henrietta Maria of France,France,24,1625,1649,14,1,7,4,1,3,30
+30,Catherine of Braganza,Portugal,23,1662,1685,14,1,7,4,1,4,31
+31,Mary of Modena,Italy,3,1685,1688,14,1,7,4,1,5,32
+32,Prince George of Denmark,Denmark,5,1702,1707,14,1,7,4,2,5,33
+33,Wilhelmina Charlotte Caroline of Brandenburg-Ansbach,Germany,10,1727,1737,14,2,7,4,2,5,34
+34,Sophia Charlotte of Mecklenburg-Strelitz,Germany,57,1761,1818,14,3,7,4,2,5,35
+35,Caroline Amelia Elizabeth of Brunswick-Wolfenbüttel,Germany,1,1820,1821,14,4,7,4,2,5,36
+36,Adelaide Amelia Louise Theresa Caroline of Saxe-Meiningen,Germany,7,1830,1837,14,5,7,4,2,5,37
+37,Franz August Karl Albert Emanuel of Saxe-Coburg and Gotha,Germany,21,1840,1861,14,6,7,4,2,5,38
+38,Alexandra Caroline Marie Charlotte Louise Julia of Denmark,Denmark,9,1901,1910,14,6,7,4,3,5,39
+39,Victoria Mary Louise Olga Pauline Claudine Agnes of Teck,England,26,1910,1936,14,6,8,4,3,5,40
+40,Elizabeth Angela Marguerite Bowes-Lyon,England,16,1936,1952,14,6,9,4,3,5,41
+41,Philip of Greece and Denmark,Greece,69,1952,2021,14,6,9,4,3,6,42
+42,Camilla Rosemary Shand,England,1,2022,2023,14,6,10,4,3,6,43
