@@ -1,6 +1,4 @@
-## requirements: 
--- A well-fleshed-out README that describes your project. The Fancy Github guide has a tutorial on README filesLinks to an external site.. Various examples can be found hereLinks to an external site. and hereLinks to an external site. and hereLinks to an external site.Links to an external site.. Make sure you include:
-### The British Consort Conundrum: Data Collection and Visualization
+## The British Consort Conundrum: Data Collection and Visualization
 ### What I wanted to find out: 
 
 ### What I really found: 
