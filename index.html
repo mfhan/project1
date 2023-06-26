@@ -28,7 +28,6 @@
     font-family: 'Helvetica' sans-serif;
     font-size: 100%;
     /* text-align: center; */
-    margin: 0 auto;
   }
 
   h1 {
@@ -47,8 +46,8 @@
   img.align-center {
     display: block;
     margin: 0px auto;
-    height: 300px;
-    width: 300px;
+    /* height: 300px;
+    width: 300px; */
   }
 
   .full-bleed-image {
@@ -64,44 +63,59 @@
   img {
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
-    width: 150px;
+    padding: 10px;
+    /* width: 150px; */
   }
 
   img.align-right {
     float: right;
-    margin-left: 20px;
+    padding-left: 10px;
+  }
+
+  img.align-left {
+    float: left;
+    padding-right: 10px;
   }
 
   img.large {
     width: 450 px;
-    height: 450 px
+    height: 450 px;
+  }
+
+  img.caption {
+    font-size: 0.9;
+    /* border: 1px dotted blue; */
+    text-align: left;
   }
 
   img.medium {
     width: 250 px;
-    height: 250 px
+    height: 250 px;
   }
 
   figcaption {
-    font-size: 12px;
+    font-size: 0.9;
     /* border: 1px dotted blue; */
     text-align: center;
   }
 
 
+
   .chart-holder h3 {
     font-weight: bold;
+    margin: 20px;
+    padding: 10px;
   }
 
   .chart-holder .subtitle {
     font-size: 1.2em;
+    font-style: bold;
   }
 
   .chart-holder .caption {
     font-size: 0.9;
-    color: grey;
-    text-align: right;
+    /* color: grey; */
+    /* text-align: right; */
   }
 </style>
 
@@ -112,16 +126,15 @@
     <br>
     <figure>
       <img src="./img/Philippa.gif" alt="Philippa of Hainault, spouse of Edward III" class="align-center large">
-      <!-- <figcaption>Philippa of Hainault, spouse of Edward III</figcaption> -->
+      <figcaption>Philippa of Hainault, spouse of Edward III</figcaption>
     </figure>
+
+
 
     <div class='text-container'>
       <h1>Choose Your Queen Wisely: </h1>
       <hr>
       <h1>Royal Consort Conundrum in British History</h1>
-      <!-- <h1>Choosing a Royal Consort</h1> -->
-
-    </div>
     </div>
     <div class='text-container'>
       <p></p>
@@ -132,71 +145,165 @@
           <class="royal">ROYAL CROWN
             </class>
         </strong> must be in want of a good spouse.</h2>
+      <img src="./img/MargaretAnjou.jpg" alt="Margaret of Anjou" height="300" width="300" class="align-left medium"
+        caption="Philippa of Hainault, spouse of Edward III">
+
+      <!-- <img src="./img/Isabella2.png" alt="Isabella of France" class="align-left medium" /> -->
+
+      <!-- <img src="./img/Isabella2.png" alt="Isabella of France" class="align-left medium" /> -->
+
       <h3>For most of the United Kingdom's history, Jane Austen's opening remark in <i>Pride and Prejudice
         </i> was a matter of critical national importance for a British monarch.
 
-        <img src="./img/MargaretAnjou.jpg" alt="Margaret of Anjou" class="align-right medium" />
-        <p> Choosing the right spouse was key to building or maintaining vital
-          political alliances with Continental powers. Conversely, marrying the wrong person could weaken the legitimacy
+
+        <p>For this island nation, choosing the right spouse was key to building or maintaining vital political
+          alliances with Continental powers: often, those countries were France, Spain and Germany.
+        <p>Conversely, marrying the wrong person, without a proper dowry or royal connections, could weaken the
+          legitimacy
           of the royal lineage and encourage dissent. </p>
+        <p>Where did these (mostly) women come from? And do their places of origin reveal historic trends? Will the data
+          show anything unexpected?
+        <p>Let's find out, using data analysis and visualization.
+        </p>
+        <h4><strong>Note:</strong> this timeline starts with the House of Normandy (1066) and ends with the
+          current House of Windsor, a timespan of more than 860 years. Records from the Houses of Wessex and Denmark
+          (886-1066) are too complex and unreliable,
+          with dates lost to time and uncrowned consorts of uncertain status.
+          Our analysis starts with the Norman Conquest and ends with Queen Camilla.
+        </h4>
+
       </h3>
+    </div>
 
+    <!-- <div class='image-text'>------------------------</div> -->
 
-      <br>
-      <h4>Most famously, Eleanor of Aquitaine in 1154 brought with ther a territory that was larger than the kingom of
-        France at the time.
-        <!-- <p>In 1170, Margaret of France was picked because "her dowry was the vital and much disputed territory of Vexin" north of Paris.  -->
+    <div class='chart-holder' align="center">
+      <h2>British Royal Consorts Timeline</h2>
+      <div class='subtitle'>Chart representing each of the 43 consorts with their country of origin</div>
+      <img class="align-center" width="450" height="350" max-width="600" max-height="400"
+        alt="scatter plot with 43 dots representing birthplaces" src='./viz/better_seaborn.png'>
+      <div class='caption'>source: wikipedia</div>
+    </div>
+    <br>
+
+    <!-- <div class='image-text'>------------------------</div> -->
+    <div class='text-container'>
+      <h4>
+        <p>From the get-go, we notice countries bunched together, succeeding themselves. There's a series of
+          French-born
+          consorts (blue dots) during the first third of the series, a gaggle of English-born spouses (lime green) in
+          the middle, and a spate of Germans (yellow) in the final quarter. </p>
+        <p>Let's try with another chart.
+    </div>
+    <br> <br><br>
+
+    <div class='chart-holder' align="center">
+      <!-- <h2>Royal Consorts Timeline bar chart</h2> -->
+
+      <div class='subtitle'>Bar Chart of the 43 consorts with their country of origin</div>
+      <img class="align-center" min-width="450" min-height="350" width="600" height="450" max-width="900"
+        max-height="600" alt="Bar chart with each bar representing birthplaces" src='./viz/plotly_simple.png'>
+      <div class='caption'>source: wikipedia</div>
+    </div>
+
+    <br>
+    <div class='text-container'>
+      <h4>
+        <p>The trends are much more visible. There are no fewer than 10 French women (blue bars) in the first 15
+          consorts,
+          and 13
+          among the first 20. But after that number, there is a shift toward English queens (purple bars). And starting
+          from consort #34, a series of six German spouses.
+        <p>How about a cumulative view?
+    </div>
+    <div class='chart-holder' align="center">
+      <!-- <h2>Royal Consorts Timeline bar chart</h2> -->
+
+      <div class='subtitle'>Stacked Bar Chart of country totals at the accession of every new consort</div>
+      <img class="align-center" min-width="450" min-height="350" width="600" height="450" max-width="900"
+        max-height="600" alt="Bar chart with birthplaces stacked upon each other" src='./viz/plotly_sum.png'>
+      <div class='caption'>source: wikipedia</div>
+    </div>
+    <div class='text-container'>
+      <h4>
+        <p>The stacked bar chart summarizes nicely the political and military imperatives behind the choice of women
+          from
+          the same country, over and over.
+        <p>For most of the middle ages, from 1066 to around 1470, securing a French spouse was the best way for English
+          sovereigns to maintain familial connections with the Kingdom of France, with which it was competing for a
+          staggering number of territories.
+
+          <img src="./img/Henrietta.jpg" alt="Henrietta of France, wife of Charles I" height="280" width="250"
+            class="align-right medium" />
+          <!-- <img src="./img/EleanorProvence.jpg" alt="Eleanor of Provence" height="250" width="180"
+          class="align-left medium" /> -->
+        <p>Most famously, Eleanor of Aquitaine in 1154 brought with her a duchy that was larger than the kingom of
+          France
+          at the time.
+        <p>In 1170, Margaret of France was picked because her dowry was the much disputed territory of Vexin north of
+          Paris.
         <p>Catherine of Valois' marriage to Henry V in 1420 was part of a plan to eventually place his husband on the
           throne of France, and thereby end the Hundred Years' War.
-        <p>Catherine of Braganza was picked for Charles II because of her father King John 's prominent position as the
-          head of the powerful Portuguese colonial empire.
-        <p> Alexandra of Denmark's family had been relatively obscure until 1852, when her father was chosen to become
-          king of Denmark. She was then deemed an appropriate wife for the future Edward VII, son of Queen Victoria.
-        <p>But with the end of the 19th century, the international importance of a consort diminished to the point that
-          ....
 
+        <p>Catherine of Braganza was picked for Charles II in 1660 after her father became the head of Portugal's
+          powerful
+          colonial empire.
+          <img src="./img/Camilla.jpg" alt="queen Camilla" height="250" width="180" class="align-left medium" />
+        <p> Alexandra of Denmark's family had been relatively obscure until 1852, when her father became king of
+          Denmark. She was then deemed an appropriate wife for the future Edward VII, son of Queen Victoria.
 
+        <p>But with the end of the 19th century, the international importance of a consort diminished. Of course, royal
+          spouses had to meet the social requirements of their time, but the monarch's choice of a consort ceased to be
+          a matter of vital international importance.
 
-        <p>
-          Bacon ipsum dolor amet tri-tip swine corned beef cow tongue alcatra short loin andouille. Pig bacon cupim
-          pancetta. Shank short loin tri-tip, chicken pig brisket venison rump flank pork chop beef ribs.
-        <p>
-        <p>Alcatra filet mignon rump swine, t-bone pork loin
-          ribeye fatback bacon tongue prosciutto pancetta capicola. Cow ribeye corned beef rump, chuck filet mignon
-          pastrami alcatra bacon.
-        <h2>A note on editorial decisions</h2>: this timeline starts with the House of Normandy (1066) and ends with
-        the
-        House of Windsor. Records from the Houses of Wessex and Denmak (886-1066) are too complex and unreliable,
-        with dates lost to time and uncrowned consorts of uncertain status.
-        Our analysis starts with the Norman Conquest and ends with Queen Camilla.
-      </h4>
+          <br><br><br><br><br>
+        <h2 align="center">Staying Power</h2>
+        <h4>We've taken a close look at the composition and sequence of British royal marriages, but could there be a
+          more qualitative yeardstick? How about total time spent as royal consort? We've got that! </h4>
+        <br>
+        <div class='chart-holder' align="center">
+          <!-- <h2>Royal Consorts Timeline bar chart</h2> -->
 
+          <div class='subtitle'>Bar chart of each consort with their time on the throne</div>
+          <img class="align-center" min-width="450" min-height="300" width="600" height="350" max-width="900"
+            max-height="600" alt="Bar chart showing number of years on the throne, by year"
+            src='./viz/length_sequence.png'>
+          <div class='caption'>source: wikipedia</div>
+        </div>
+        <div class='text-container'>
+          <h4>Being a royal spouse can be a lifelong mission (as evidenced by the very pink column on the penultimate
+            spot -- that's Prince Philip, who stayed at his post for 69 years) or evaporate in an instant: many women,
+            even queens, died in labor, and as shown by the sobering flat entries next to the green Spanish column in
+            the middle of the chart, made the mistake of marrying King Henry VIII to tragic results.
 
+        </div>
 
-      <div class='image-text'>----</div>
+        <div class='chart-holder' align="center">
+          <!-- <h3>Royal Consorts Total Tenure</h3> -->
+          <div class='subtitle'>The Best English Queens Were... French
+            <img class="align-center" min-width="450" min-height="300" width="600" height="350" max-width="900"
+              max-height="600" alt="Bar chart Comparing Total Tenure by Country" src='./viz/totaltime.png'>
+            <div class='caption'>source: wikipedia</div>
+          </div>
+          <div class='text-container'>
+            <h4>Given France's front-runner status in the number of British consorts it produced, its dominant position
+              in cumulative tenure time shouldn't be a shock. Still, it is striking that England, with no fewer than 10
+              consorts, doesn't even reach the 100 year mark and is actually beaten by Germany.
+              <p>At the same time, the low total time posted by English consorts only strengthens our thesis: that for
+                most of history, royal
+                marriages were above all a diplomatic tool aimed at securing the country's international standing in an
+                ever insecure world.
+          </div>
+          <p><a href="https://github.com/mfhan/project1/" target="_blank">Link to GitHub repo and notebooks</a>
+          </p>
 
-      <div class='chart-holder'>
-        <h3>British Royal Consorts Timeline</h3>
-        <div class='subtitle'>This is a subtitle</div>
-        <img alt="Here is a description of the chart" src='plot.png'>
-        <div class='caption'>Summary of the data source</div>
-      </div>
-
-      <div class='image-text'>----</div>
-
-      <div class='chart-holder'>
-        <h3>Royal Consorts Total Tenure</h3>
-        <div class='subtitle'>This is a subtitle</div>
-        <img alt="Here is a description of the chart" src='plot.png'>
-        <div class='caption'>Summary of the data source</div>
-      </div>
-    </div>
+        </div>
 
   </main>
 </body>
-<fn>"Hainaut and its neighbourhood remained an important frontier area, or "march", during the High Middle Ages. Though
+<!-- <fn>"Hainaut and its neighbourhood remained an important frontier area, or "march", during the High Middle Ages. Though
   it was part of the Holy Roman Empire, which ruled from what is now Germany, it was culturally and linguistically
   French and part of the Catholic Archdiocese of Reims. Like its neighbours such as the counties of Brabant and
-  Flanders, it was frequently entangled in the politics of France." https://en.wikipedia.org/wiki/County_of_Hainaut</fn>
+  Flanders, it was frequently entangled in the politics of France." https://en.wikipedia.org/wiki/County_of_Hainaut</fn> -->
 
 </html>
