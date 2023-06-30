@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <title>Queens and Crowns: The Royal Consort Conundrum</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
@@ -37,6 +38,7 @@
 
   .royal {
     color: red;
+
   }
 
   .text-container img {
@@ -57,11 +59,11 @@
 
   .full-bleed-image .image-text {
     color: white;
-    text-shadow: 0 0 20px black;
+    /* text-shadow: 0 0 20px black; */
   }
 
   img {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 4px;
     padding: 10px;
     /* width: 150px; */
@@ -99,8 +101,6 @@
     text-align: center;
   }
 
-
-
   .chart-holder h3 {
     font-weight: bold;
     margin: 20px;
@@ -117,6 +117,21 @@
     /* color: grey; */
     /* text-align: right; */
   }
+
+  .title {
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+  .subtitle {
+    font-size: is-large;
+    font-weight: bold;
+  }
+
+  .undertitle {
+    font-size: 18px;
+    font-weight: bold;
+  }
 </style>
 
 <body>
@@ -128,12 +143,10 @@
       <img src="./img/Philippa.gif" alt="Philippa of Hainault, spouse of Edward III" class="align-center large">
       <figcaption>Philippa of Hainault, spouse of Edward III</figcaption>
     </figure>
+    <br>
 
-
-
-    <div class='text-container'>
+    <div class='text-container title'>
       <h1>Choose Your Queen Wisely: </h1>
-      <hr>
       <h1>Royal Consort Conundrum in British History</h1>
     </div>
     <div class='text-container'>
@@ -141,10 +154,10 @@
     </div>
 
     <div class='text-container'>
-      <h2>It is a truth universally acknowledged that a person in possession of the <strong>
-          <class="royal">ROYAL CROWN
-            </class>
-        </strong> must be in want of a good spouse.</h2>
+      <div class="subtitle">
+        <h2><i>It is a truth universally acknowledged that a person in possession of the royal crown must be in want of
+            a good spouse.</i></h2>
+      </div>
       <img src="./img/MargaretAnjou.jpg" alt="Margaret of Anjou" height="300" width="300" class="align-left medium"
         caption="Philippa of Hainault, spouse of Edward III">
 
@@ -165,12 +178,14 @@
           show anything unexpected?
         <p>Let's find out, using data analysis and visualization.
         </p>
-        <h4><strong>Note:</strong> this timeline starts with the House of Normandy (1066) and ends with the
+        <h4><strong>(Note:</strong> this timeline starts with the House of Normandy (1066) and ends with the
           current House of Windsor, a timespan of more than 860 years. Records from the Houses of Wessex and Denmark
           (886-1066) are too complex and unreliable,
           with dates lost to time and uncrowned consorts of uncertain status.
-          Our analysis starts with the Norman Conquest and ends with Queen Camilla.
+          Our analysis starts with the Norman Conquest and ends with Queen Camilla.)
         </h4>
+        <br>
+        <br>
 
       </h3>
     </div>
@@ -178,8 +193,8 @@
     <!-- <div class='image-text'>------------------------</div> -->
 
     <div class='chart-holder' align="center">
-      <h2>British Royal Consorts Timeline, 1066-2023</h2>
-      <div class='subtitle'>Chart representing each of the 43 consorts with their country of origin</div>
+      <div class="subtitle">British Royal Consorts Timeline, 1066-2023</div>
+      <div class='undertitle'>Chart representing each of the 43 consorts with their country of origin</div>
       <img class="align-center" width="450" height="350" max-width="600" max-height="400"
         alt="scatter plot with 43 dots representing birthplaces" src='./viz/better_seaborn.png'>
       <div class='caption'>source: wikipedia</div>
@@ -223,6 +238,7 @@
     </div>
     <div class='chart-holder' align="center">
       <!-- <h2>Royal Consorts Timeline bar chart</h2> -->
+      <br>
 
       <div class='subtitle'>Stacked Bar Chart of country totals at the accession of every new consort</div>
       <img class="align-center" min-width="450" min-height="350" width="600" height="450" max-width="900"
@@ -263,8 +279,8 @@
           spouses had to meet the social requirements of their time, but the monarch's choice of a consort ceased to be
           a matter of vital international importance.
 
-          <br><br><br><br><br>
-        <h2 align="center">Staying Power</h2>
+          <br><br><br>
+        <div class="subtitle" align="center">Staying Power</div>
         <h4>We've taken a close look at the composition and sequence of British royal marriages, but could there be a
           more qualitative yeardstick? How about total time spent as royal consort? We've got that! </h4>
         <br>
@@ -293,24 +309,26 @@
 
         <div class='chart-holder' align="center">
           <!-- <h3>Royal Consorts Total Tenure</h3> -->
-          <div class='subtitle'>The Best English Queens Were... French
-            <img class="align-center" min-width="450" min-height="300" width="600" height="350" max-width="900"
-              max-height="600" alt="Bar chart Comparing Total Tenure by Country" src='./viz/totaltime.png'>
-            <div class='caption'>source: wikipedia</div>
-          </div>
-          <div class='text-container' align="left">
-            <h4>Given France's front-runner status in the number of British consorts it produced, its dominant position
-              in cumulative tenure time shouldn't be a shock. Still, it is striking that England, with no fewer than 10
-              consorts, doesn't even reach the 100 year mark and is actually beaten by Germany.
-              <p>At the same time, the low total time posted by English consorts only strengthens our thesis: that for
-                most of history, royal
-                marriages were above all a diplomatic tool aimed at securing the country's international standing in an
-                ever insecure world.
-          </div>
-          <p><a href="https://github.com/mfhan/project1/" target="_blank">Link to GitHub repo and notebooks</a>
-          </p>
 
+
+          <div class='subtitle' align="center">The Best English Queens Were... French</div>
+          <img class="align-center" min-width="450" min-height="300" width="600" height="350" max-width="900"
+            max-height="600" alt="Bar chart Comparing Total Tenure by Country" src='./viz/totaltime.png'>
+          <div class='caption'>source: wikipedia</div>
         </div>
+        <div class='text-container' align="left">
+          <h4>Given France's front-runner status in the number of British consorts it produced, its dominant position
+            in cumulative tenure time shouldn't be a shock. Still, it is striking that England, with no fewer than 10
+            consorts, doesn't even reach the 100 year mark and is actually beaten by Germany.
+            <p>At the same time, the low total time posted by English consorts only strengthens our thesis: that for
+              most of history, royal
+              marriages were above all a diplomatic tool aimed at securing the country's international standing in an
+              ever insecure world.
+        </div>
+        <p><a href="https://github.com/mfhan/project1/" target="_blank">Link to GitHub repo and notebooks</a>
+        </p>
+
+    </div>
 
   </main>
 </body>
