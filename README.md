@@ -8,20 +8,22 @@ I am from France, and a bit of a history buff. I was reading an umpteenth book a
 
 ### Summary of the data collection process, with links
 -- Wikipedia, two different pages (https://en.wikipedia.org/wiki/List_of_English_royal_consorts  and https://en.wikipedia.org/wiki/List_of_British_royal_consorts) 
-#-- Personal research to collect birthplace info when not provided by Wikipedia
+-- Personal research to collect birthplace info when not provided by Wikipedia
 
 ### Overview of the data analysis process
--- Data cleanup: appending several tables; bringing consistency to tables; simplifying entries; removing unnecessary columns. Tool: python 
+-- Data cleanup: appending several tables; bringing consistency to tables; simplifying entries; removing unnecessary columns. Tool: python. 
+
 -- Data analysis: Grouping and averaging. 
--- Visualization: Used plotly, matplotlib, seaborn to explore options. Datawrapper for quick bar charts 
+
+-- Visualization: Used plotly, matplotlib, seaborn to explore options. Datawrapper for quick bar charts. 
 
 
 ### What new skills, approaches, etc I used, or where I grew the most during the project
 I had to be patient with the process and at the same time decide to ditch unproductive dataset to pick up this topic on the fly. I learned to form clear questions to get the right kind of help from TAs. 
 
 ### What I tried to do but did not have the skills/time (but might do if I had more time)
-I would have wanted to produce more sophisticated charts showing the composition of the consorts list every time a new spouse came in the picture. I intend to find a solution. 
-I would like to get comments from actual historians about royal marriages and receive input on more interesting angles to explore. 
+-- I would have wanted to produce more sophisticated charts showing the composition of the consorts list every time a new spouse came in the picture. I intend to find a solution. 
+-- I would like to get comments from actual historians about royal marriages and receive input on more interesting angles to explore. 
 
 #### Main notebook, included in this repo: queens.ipynb
-#### Link to GitHub page: https://mfhan.github.io/project1/
+#### Link to published page: https://mfhan.github.io/project1/
