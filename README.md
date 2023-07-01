@@ -18,7 +18,7 @@ I am from France, and a bit of a history buff. I was reading an umpteenth book a
 -- Visualization: Used plotly, matplotlib, seaborn to explore options. Datawrapper for quick bar charts. 
 
 
-### What new skills, approaches, etc I used, or where I grew the most during the project
+### New skills & learning opportunities: 
 I had to be patient with the process and at the same time decide to ditch unproductive dataset to pick up this topic on the fly. I learned to form clear questions to get the right kind of help from TAs. 
 
 ### What I tried to do but did not have the skills/time (but might do if I had more time)
