@@ -28,16 +28,17 @@
 <style>
   body {
     /* font-family: 'Helvetica' sans-serif; */
-    font-family: 'Georgia';
+    font-family: 'Arial';
     font-weight: 400;
   }
 
   .text-container {
     max-width: 760px;
     margin: 20px auto;
-    font-family: 'Helvetica' sans-serif;
+    /* font-family: 'Helvetica' sans-serif; */
+    font-family: 'Arial' sans-serif;
     font-size: 100%;
-    font-weight: 400;
+    font-weight: medium;
     padding-bottom: 20px;
     /* text-align: center; */
   }
@@ -138,7 +139,7 @@
   }
 
   .subtitle {
-    font-size: 32px;
+    font-size: 28px;
     color: black;
     font-weight: bold;
   }
@@ -163,8 +164,8 @@
     <div class='text-container title'>
       <!-- <h1>Choose Your Queen Wisely: </h1>
       <h1>Royal Consort Conundrum in British History</h1> -->
-      <div class="title">Choose Your Queen Wisely:
-        Royal Consort Conundrum in British History</div>
+      <div class="title">Choose Your Queen Wisely: <br>
+        Consort Conundrum in British History</div>
     </div>
     <div class='text-container'>
       <p></p>
@@ -188,11 +189,14 @@
 
         <p>For this island nation, choosing the right spouse was key to building or maintaining vital political
           alliances with Continental powers: often, those countries were France, Spain and Germany.
+          <br>
         <p>Conversely, marrying the wrong person, without a proper dowry or royal connections, could weaken the
           legitimacy
           of the royal lineage and encourage dissent. </p>
+        <br>
         <p>Where did these (mostly) women come from? And do their places of origin reveal historic trends? Will the data
           show anything unexpected?
+          <br>
         <p>Let's find out, using <a href="https://github.com/mfhan/project1/">data analysis</a> and visualization.
           <br><br>
 
@@ -209,10 +213,10 @@
     </div>
 
     <!-- <div class='image-text'>------------------------</div> -->
-
+    <div class="subtitle" align="center">British Royal Consorts Timeline, 1066-2023</div>
+    <div class='undertitle' align="center">Chart representing each of the 43 consorts with their country of origin</div>
     <div class='chart-holder' align="center">
-      <div class="subtitle">British Royal Consorts Timeline, 1066-2023</div>
-      <div class='undertitle'>Chart representing each of the 43 consorts with their country of origin</div>
+
       <img class="align-center" width="450" height="350" max-width="600" max-height="400"
         alt="scatter plot with 43 dots representing birthplaces" src='./viz/better_seaborn.png'>
       <div class='caption'>source: wikipedia</div>
@@ -230,10 +234,11 @@
     </div>
     <br>
 
+    <div class='subtitle' align="center">Consorts, With Country of Origin</div>
     <div class='chart-holder' align="center">
       <!-- <h2>Royal Consorts Timeline bar chart</h2> -->
 
-      <div class='subtitle'>Consorts, with country of origin</div>
+
       <img class="align-center" min-width="450" min-height="350" width="600" height="450" max-width="900"
         max-height="600" alt="Bar chart with each bar representing birthplaces" src='./viz/plotly_simple.png'>
       <div class='caption'>source: wikipedia</div>
@@ -254,9 +259,10 @@
           <br>
         <p>How about a cumulative view?
     </div>
+    <div class='subtitle' align="center">Country Totals Along the Years</div>
     <div class='chart-holder' align="center">
       <!-- <h2>Royal Consorts Timeline bar chart</h2> -->
-      <div class='subtitle'>Country totals at every new consort</div>
+
       <img class="align-center" min-width="450" min-height="300" width="600" height="450" max-width="900"
         max-height="600" alt="Stacked bar chart with birthplaces stacked upon each other" src='./viz/plotly_sum.png'>
       <div class='caption'>source: wikipedia</div>

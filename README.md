@@ -7,7 +7,7 @@ I am from France, and a bit of a history buff. I was reading an umpteenth book a
 -- but confirmation that, in terms of total tenure, they were dwarfed by non-English consorts 
 
 ### Summary of the data collection process, with links
--- Wikipedia, two different pages (https://en.wikipedia.org/wiki/List_of_English_royal_consorts  and https://en.wikipedia.org/wiki/List_of_British_royal_consorts) 
+-- Wikipedia, two different pages (https://en.wikipedia.org/wiki/List_of_English_royal_consorts  and https://en.wikipedia.org/wiki/List_of_British_royal_consorts)  
 -- Personal research to collect birthplace info when not provided by Wikipedia
 
 ### Overview of the data analysis process
@@ -22,7 +22,8 @@ I am from France, and a bit of a history buff. I was reading an umpteenth book a
 I had to be patient with the process and at the same time decide to ditch unproductive dataset to pick up this topic on the fly. I learned to form clear questions to get the right kind of help from TAs. 
 
 ### What I tried to do but did not have the skills/time (but might do if I had more time)
--- I would have wanted to produce more sophisticated charts showing the composition of the consorts list every time a new spouse came in the picture. I intend to find a solution. 
+-- I would have wanted to produce more sophisticated charts showing the composition of the consorts list every time a new spouse came in the picture. I intend to find a solution.   
+ 
 -- I would like to get comments from actual historians about royal marriages and receive input on more interesting angles to explore. 
 
 #### Main notebook, included in this repo: queens.ipynb
