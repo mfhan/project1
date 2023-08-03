@@ -108,11 +108,40 @@
     height: 250 px;
   }
 
-  figcaption {
-    font-size: 0.9;
+  figure {
+    display: flex
+    /* display: inline-block; */
+    /* border: 1px dotted gray; */
+    margin-right: 15px; 
+    margin-left: 0px; 
+    /* adjust as needed */
+}
+
+figure img {
+    vertical-align: top;
+}
+
+figure figcaption {
     /* border: 1px dotted blue; */
     text-align: center;
-  }
+}
+
+
+/* 
+  figure {
+      display: block;
+      margin: 0;
+      padding: 0;
+   }
+     */
+
+/*  
+  figcaption {
+    font-size: 0.8;
+    text-align: center;
+  }  
+  */
+
 
   .chart-holder {
     /* font-weight: bold; */
@@ -216,8 +245,10 @@
         want of a good spouse..."</h4>
 
       <!-- </div> -->
-      <img src="./img/MargaretAnjou.jpg" alt="Margaret of Anjou" height="300" width="300" class="align-left medium"
-        caption="Philippa of Hainault, spouse of Edward III">
+      <figure class="align-left">
+      <img src="./img/MargaretAnjou.jpg" alt="Margaret of Anjou" height="300" width="300" class="align-left">
+        <!-- <figcaption>Margaret of Anjou, spouse of Henry VI</figcaption> -->
+        </figure>
 
       <!-- <img src="./img/Isabella2.png" alt="Isabella of France" class="align-left medium" /> -->
 
@@ -332,8 +363,15 @@
     <div class='text-container'>
       <p>The stacked bar chart summarizes nicely the political and military imperatives behind the choice of women
         from the same country, over and over.
-        <img src="./img/Henrietta.jpg" alt="Henrietta of France, wife of Charles I" height="280" width="250"
+
+        <!-- <img src="./img/Henrietta.jpg" alt="Henrietta of France, wife of Charles I" height="280" width="250"
+          class="align-right medium" /> -->
+
+                <figure class="align-left">
+      <img src="./img/Henrietta.jpg" alt="Henrietta of France, wife of Charles I"  width="300"
           class="align-right medium" />
+        <!-- <figcaption>Margaret of Anjou, spouse of Henry VI</figcaption> -->
+        </figure>
 
       <p>For most of the middle ages, from 1066 to around 1470, securing a French spouse was the best way for English
         sovereigns to maintain familial connections with the Kingdom of France, with which it was competing for a
@@ -353,7 +391,17 @@
       <p><strong>Catherine of Valois'</strong> marriage to <strong>Henry V</strong> in 1420 was part of a plan to eventually place her husband on the
         throne of France, and thereby end the Hundred Years' War.
 
-        <img src="./img/Camilla.jpg" alt="queen Camilla" height="250" width="180" class="align-left medium" />
+
+        <figure class="align-left">
+        <img src="./img/Camilla.jpg" alt="queen Camilla"  width="220" class="align-left medium" />
+        <!-- <figcaption>Margaret of Anjou, spouse of Henry VI</figcaption> -->
+        </figure>
+
+        
+        <!-- <img src="./img/Camilla.jpg" alt="queen Camilla" height="250" width="180" class="align-left medium" /> -->
+
+
+
       <p>When Yorkist <strong>King Edward IV</strong> secretly wed penniless commoner <strong>Elizabeth Woodville</strong> in 1464, his relationship with
         his allies never recovered and more dynastic bloodshed ensued.
       <p>Two centuries later, <strong>Catherine of Braganza</strong> was picked for <strong>Charles II</strong> in 1660 after her father became the head of Portugal's colonial empire -- and she offered an opportunity for an alliance between the two kingdoms.
